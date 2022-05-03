@@ -29,5 +29,30 @@ Register View: `example.com/register`
 Login View: `example.com/login`
 
 ## At some point you might want to disable the register URL 
-* web.php
+* web.php <br>
 `Auth::routes(['register' => false]);`
+
+## Route Restriction
+* web.php <br>
+Route::get('dashboard', 'App\Http\Controllers\UserController@dashboard')->middleware('auth');
+
+or 
+* controller
+```<?php
+
+class UserController extends Controller
+{
+	public function __construct()
+	{
+	    $this->middleware('auth');
+	}
+
+	public function dashboard(){
+		//
+	}
+
+	...
+
+}
+```
+
