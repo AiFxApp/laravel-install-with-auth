@@ -1,5 +1,5 @@
 ## laravel-install-with-auth (from scratch)
-*These are notes for installing a new Laravel build, then with Auth, then more notes to follow...
+* These are notes for installing a new Laravel build, then with Auth, then more notes to follow...
 
 `laravel new {project_name}`
 
@@ -11,8 +11,8 @@
 
 `npm i` 
 
-*Attend to any dependency errors first...
-*Review the alternatives if needed
+* Attend to any dependency errors first...
+* Review the alternatives if needed
 
 `npm audit fix` <- normally does the trick
 
